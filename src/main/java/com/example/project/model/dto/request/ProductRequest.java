@@ -22,5 +22,5 @@ public class ProductRequest {
     private String status;
     private Date dateIn;
     private Date dateOut;
-    Category category;
+    private Long categoryId;
 }

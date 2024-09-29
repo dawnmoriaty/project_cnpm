@@ -1,7 +1,6 @@
 package com.example.project.controller;
 
 import com.example.project.service.CategoryServiceImpl;
-import com.example.project.service.CloudinaryService;
 import com.example.project.service.ProductServiceImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ProductController {
     private final CategoryServiceImpl categoryService;
     private final ProductServiceImpl productService;
-    private final CloudinaryService cloudinaryService;
 
     @GetMapping("/list")
     public String list(Model model) {
